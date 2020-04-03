@@ -1,0 +1,33 @@
+<!-- <h1>{{welcomeTitle}}</h1>
+
+<p *ngIf="deletedBook">
+     {{deletedBook.title + ' by ' + deletedBook.author}} was deleted.
+</p>
+
+<br>
+Add new book: <br>
+<input type="text" [(ngModel)]="title" placeholder="title">
+<input type="text" [(ngModel)]="author" placeholder="author">
+<input type="text" [(ngModel)]="available" placeholder="available">
+<input type="text" [(ngModel)]="image" placeholder="image">
+
+<button (click)="addBook()">Add Book</button>
+<br>
+
+<app-book [donatedBooks]="listOfBooks" [title]="title" [name]="name" 
+    [firstString]="bookString" (testString)="printString($event)"></app-book>
+
+<div *ngIf="selectedBook !== ''">
+    You've selected {{selectedBook}}.   
+</div> -->
+
+<ul>
+    <li>
+        <a [routerLink]="['']">Home </a>
+    </li>
+    <li>
+        <a [routerLink]="['/pokemons']">Pokemon </a>
+    </li>
+</ul>
+<button (click)="redirectToPokemon()">Redirect</button>
+<router-outlet></router-outlet>
