@@ -1,0 +1,39 @@
+<table border="2">
+    <table border="2">
+        <thead>
+            <th><strong>Pokemon Id</strong></th>
+            <th><strong>Pokemon Name</strong></th>
+            <th><strong>Image</strong></th>
+            <th><strong>Height</strong></th>
+            <th><strong>Weight</strong></th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pokemons of listofPokemons">
+                <td>{{pokemons.id}}</td>
+                <td>{{pokemons.name}}</td>
+                <td>
+                  <img [src]="pokemons.sprites.front_default">
+                </td>
+                <td>
+                {{pokemons.height}}
+                </td>
+                <td>
+                    {{pokemons.weight}}
+                    </td>
+            </tr>
+        </tbody>
+    </table>
+  </table>
+
+
+
+<!--<div *ngFor="let poke of listofPokemons">
+    <p>{{poke.id}}</p>
+    <p>{{poke.name}}</p>
+      
+      <br>
+      <img [src]="poke.sprites.front_default">
+    <div *ngFor="let skill of poke.abilities">
+        {{skill.ability.name}}
+    </div>
+</div> -->
