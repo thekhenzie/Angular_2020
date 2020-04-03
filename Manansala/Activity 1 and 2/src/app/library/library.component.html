@@ -1,0 +1,4 @@
+<app-books [books]="books" (eventEmitter)="GetBookSelected($event)"></app-books>
+<div *ngIf="isVisible">
+<p>Selected book: {{selectedBook.title}} by {{selectedBook.author}}</p>
+</div>

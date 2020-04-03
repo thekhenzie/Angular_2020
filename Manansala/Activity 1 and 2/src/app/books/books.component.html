@@ -1,0 +1,25 @@
+<p>My name is {{name}}</p>
+    <input type="text" #newtitle placeholder="Title">
+    <input type="text" #newauthor placeholder="Author">
+    <label>Available?</label><input type="text" #newavailable placeholder="true/false">
+    <input type="text" #newimage placeholder="Image URL">
+    <button (click)="AddBook(newtitle.value, newauthor.value, newavailable.value, newimage.value)">Add Book</button>
+<tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Available</th>
+    <th>Image</th>
+    <th>Action</th>
+</tr>
+<tr *ngFor="let book of books">
+    <td>{{book.id}}</td>
+    <td>{{book.title}}</td>
+    <td>{{book.author}}</td>
+    <td>{{book.available}}</td>
+    <td><div *ngIf="book.available; else elseBlock">
+        <app-image [url]="book.image"></app-image>
+        </div>
+        <ng-template #elseBlock><p>No image</p></ng-template></td>
+    <td><button (click)="BookSelected(book)">Select Book</button></td>
+</tr>
