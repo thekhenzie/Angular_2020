@@ -14,7 +14,7 @@
 3. Checkout branch
 - git checkout baniqued
 
-4. Paste the codes on your folder.
+4. Paste the codes on your folder. You can paste only the src folder of your app.
 
 5. Commit your code
 - git add . 
