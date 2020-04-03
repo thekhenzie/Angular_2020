@@ -1,0 +1,4 @@
+<img style="width: 100px;" *ngIf="selectedBook.image; else noImage" [src]='selectedBook.image'>
+<ng-template #noImage>
+    No image
+</ng-template>

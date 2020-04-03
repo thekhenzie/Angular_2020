@@ -1,0 +1,20 @@
+<table *ngIf='books && books.length'>
+    <table>
+        <thead>
+            <th><strong>Book Title:</strong></th>
+            <th><strong>Author:</strong></th>
+            <th><strong>Availability:</strong></th>
+            <th><strong>Action</strong></th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books">
+                <td>{{book.title}}</td>
+                <td>{{book.author}}</td>
+                <td *ngIf='book.available'>Available</td>
+                <td *ngIf='!book.available'>Unavailable</td>
+                <td><button (click)='onBtnClick(book)'>Select Book</button></td>
+            </tr>
+        </tbody>
+    </table>
+</table>
+<app-image [selectedBook]="selectedBook"> </app-image>
