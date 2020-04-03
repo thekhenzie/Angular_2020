@@ -1,0 +1,5 @@
+
+<app-book [books]="libraryBooks" (selectedBook)="selectButtonClick($event)" ></app-book>
+    
+    <p  [hidden]='!selectedBookTitle' class="selected" >Selected book: {{selectedBookTitle}} by {{selectedBookAuthor}}</p>
+

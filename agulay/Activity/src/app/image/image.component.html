@@ -1,0 +1,5 @@
+
+<img *ngIf="imageURL; else noImage" [src]='imageURL'>
+<ng-template #noImage>
+    <p>No image</p>
+</ng-template>

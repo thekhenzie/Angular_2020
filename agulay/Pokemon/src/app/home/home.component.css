@@ -1,0 +1,13 @@
+
+h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+hr{
+    border-bottom:  rgb(230, 10, 10) 1px solid ;
+}
+.img{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}

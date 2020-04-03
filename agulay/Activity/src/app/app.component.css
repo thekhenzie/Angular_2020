@@ -1,0 +1,19 @@
+
+h1{
+    text-align: center;
+    font-family: arial, sans-serif;
+    text-transform: capitalize;
+}
+button{
+    text-transform: uppercase;
+    margin-right: 10px;
+
+}
+input{
+    margin-right: 15px;
+}
+
+.format{
+    font-family: arial,sans-serif;
+    text-align: center;
+}
