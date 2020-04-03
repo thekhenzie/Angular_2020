@@ -1,0 +1,14 @@
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+
+<div class="flex-container">
+  <div class="card" *ngIf="bookObject.id>0">
+    <img [src]="bookObject.image" width="200px" height="200px" alt="No Image">
+    <h4><b>{{bookObject.title}}</b></h4>
+    <p>{{bookObject.author}}</p>
+    <p>ID {{bookObject.id}}</p>
+    <p>{{bookObject.available}}</p>
+  </div>
+  <br>
+  <app-books [books]="books" (addToLibrary)="AddToLibrary($event)"></app-books>
+</div>

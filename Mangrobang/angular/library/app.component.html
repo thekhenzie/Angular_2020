@@ -1,0 +1,25 @@
+<div class="flex-container">
+
+  <br>
+
+  <div class="column">
+    <input type="text" [(ngModel)]="title">
+    <label>Title </label>
+    <input type="text" [(ngModel)]="author">
+    <label>Author </label>
+    <input type="checkbox" [(ngModel)]="available">
+    <label>Available?</label><br>
+    <input type="url" [(ngModel)]="image">
+    <label>Image Link</label>
+    <br>
+    <button (click)="AddInputBook()"> Submit</button>
+    <br>
+    <br>
+    <button (click)="DeleteLastBook()"> Delete Last Book</button>
+  </div>
+
+  <br>
+
+  <app-library [books]="books"></app-library>
+
+</div>
