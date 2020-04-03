@@ -1,0 +1,28 @@
+<br>
+<h1>{{pokemon.name}}</h1>
+<hr>
+
+<table>
+    <tr>
+        <td colspan="2"> <img [src]='pokemon.sprites.front_default'> <img [src]='pokemon.sprites.front_shiny'><p>[Default] & [Shiny]</p> </td>
+    </tr>
+    <tr>
+        
+    </tr>
+    <tr>
+        <td>Order:</td><td>{{pokemon.order}}</td>
+    </tr>
+    <tr>
+        <td>Name:</td><td>{{pokemon.name}}</td>
+    </tr>
+    <tr>
+        <td>Type/s:</td><td><a *ngFor="let type of pokemon.types">[{{type.type.name}}] </a></td>
+    </tr>
+    <tr>
+        <td>Height & Weight</td><td>{{pokemon.height * 10}} cm | {{pokemon.weight * 0.1}} kg</td>
+    </tr>
+    <tr>
+        <td>Abilities</td>
+        <td><a *ngFor="let ability of pokemon.abilities">[{{ability.ability.name}}] </a></td>
+    </tr>
+</table>

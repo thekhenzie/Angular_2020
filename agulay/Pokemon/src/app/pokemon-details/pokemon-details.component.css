@@ -1,0 +1,19 @@
+
+h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+hr{
+    border-bottom:  rgb(230, 10, 10) 1px solid ;
+}
+
+table{
+    width: 80%;
+    margin-left: 10%;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
