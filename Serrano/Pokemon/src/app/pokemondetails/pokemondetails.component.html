@@ -1,0 +1,29 @@
+<table>
+    <th colspan="3"><h1>{{pokemon.name}}</h1></th>
+    <tr>
+        <td rowspan="6">
+            <img width = "100%" [src] = pokemon.sprites.front_default>
+        </td>
+        <td>
+            <tr>
+                ID : {{pokemon.id}}
+            </tr>
+            <tr>
+                Height : {{pokemon.height}}
+            </tr>
+            <tr>
+                Weight : {{pokemon.weight}}
+            </tr>
+        </td>
+        <td>
+            <tr>Shiny Form:</tr>
+            <tr><img width = "100%" [src] = pokemon.sprites.front_shiny></tr>
+        </td>
+        
+    </tr>
+
+</table>
+<a [routerLink]="['']">GO BACK TO POKEDEX</a>
+<router-outlet></router-outlet>
+
+
