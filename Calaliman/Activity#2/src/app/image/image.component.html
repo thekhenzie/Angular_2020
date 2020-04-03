@@ -1,0 +1,4 @@
+<img style="width: 100px;" *ngIf="ImageSource; else noImage" [src] = "ImageSource">
+<ng-template #noImage>
+    No Image
+</ng-template>

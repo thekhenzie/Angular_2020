@@ -1,0 +1,11 @@
+<!--Display Section-->
+<div id="divPokedex" *ngFor="let pokemon of listOfMonster">
+    <div id="pokemonName">
+      <p>Pokemon#{{pokemon.id}}<br>Pokemon name: {{pokemon.name}}</p>
+    </div>
+    <div id="divPokeImage">
+        <a [routerLink]="['/detail',pokemon.id]">
+        <img id="pokemonImage" [src]="pokemon.sprites.front_default">
+        </a>
+    </div>
+</div>
