@@ -1,0 +1,28 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+  }
+
+  th{
+    background-color: black;
+    color:white;
+  }
+  
+  td, th {
+    border:  1px solid white;
+    padding: 5px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: lightgray;
+  }
+
+  input{
+   color: #99A3BA;
+    border: #CDD9ED;
+    background: #fff;
+    --input-placeholder: #CBD1DC;
+    --input-border-focus: #275EFE;
+  }

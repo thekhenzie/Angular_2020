@@ -1,0 +1,36 @@
+h1{
+    font-family: monospace;
+    text-align: center;
+}
+
+table{
+    font-family: monospace;
+    font-size: large;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th{
+    background-color: black;
+    color:white;
+}
+  
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+div{
+    text-align: center;
+}
+
+button{
+    font-family: monospace;
+    border: none;
+    padding: 20px;
+    color:black;
+    background-color:gainsboro;
+    font-size: 20px;
+    cursor: pointer;
+}
