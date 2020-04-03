@@ -1,0 +1,4 @@
+Activity
+-create a book service 
+-- addNewBook
+-- use inputs : id, name, author, image, available

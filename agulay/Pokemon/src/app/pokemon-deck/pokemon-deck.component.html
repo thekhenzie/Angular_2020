@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+<hr>
+<table>
+  <thead>
+    <th>name</th>
+    <th>image</th>
+    <th>action</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let pokemon of pokemonDeck">
+    <td class="img">{{pokemon.name}}</td>
+    <td class="img" ><img [src]='pokemon.sprites.front_default'> </td>
+    <td class="img"><button (click)="redirectToDetails(pokemon)">Check Details</button></td>
+  </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <td colspan=4></td>
+    </tr>
+</tfoot>
+</table>
