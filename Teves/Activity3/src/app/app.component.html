@@ -1,0 +1,15 @@
+<!-- <button (click)="getAllBooks()">Load Books</button>
+<button (click)="getDeleteLastBook()">Delete last book</button> -->
+
+<h1>{{welcome}}</h1>
+<br><br>
+<strong>New book:</strong>&nbsp;&nbsp;&nbsp;
+<input type="text"  [(ngModel)]="title" placeholder = "Title">
+<input type="text" [(ngModel)]="author" placeholder = "Author">
+<input type="text" [(ngModel)]="available" placeholder = "Available">
+<input type="text" [(ngModel)]="image" placeholder = "Image source">
+<button id="add" (click)="addBook()">Add book</button>&nbsp;
+<button id="del" (click)="deleteBook()">Delete last book</button>
+<br><br>
+
+<app-book [books]="listOfBooks"></app-book>

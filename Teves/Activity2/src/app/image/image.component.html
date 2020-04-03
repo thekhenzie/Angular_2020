@@ -1,0 +1,5 @@
+<p>image.html</p>
+    <img style="width: 100px;" *ngIf="imageBook.image; else noImage" [src]='imageBook.image'>
+    <ng-template #noImage>
+        No image
+    </ng-template>
