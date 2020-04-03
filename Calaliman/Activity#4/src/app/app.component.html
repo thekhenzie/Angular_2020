@@ -1,0 +1,15 @@
+
+<!--Input Section-->
+<div id="divInputSection">
+  <label for="pokeRange">Enter number of Pokemons to display:</label>
+  <input #pokeRange type="number" min="1" max="100">
+  <button (click)="getPokemon(pokeRange.value)">Display</button>
+</div><br>
+
+<!--Display Section-->
+<div id="divBase" *ngFor="let pokemon of listOfMonster; let count = index">
+  <div id="divPokeName">
+    <p id="pokemonName">Pokemon#{{count + 1}}<br>Pokemon name: {{pokemon.name}}</p>
+  </div>
+  <div id="divPokeImage"><img id="pokemonImage" [src]="pokemon.sprites.front_default"></div>
+</div>

@@ -1,0 +1,12 @@
+<h1>Author: {{pageTitle}}</h1>
+
+<input type="text" placeholder="Title" [(ngModel)]='bookTitle'>
+<input type="text" placeholder="Author" [(ngModel)]='bookAuthor'>
+<input type="text" placeholder="Available" [(ngModel)]='bookAvailable'>
+<input type="text" placeholder="Book Image Source" [(ngModel)]='imageSrc'>
+<button (click) = "onAddBook()">Add Book</button><br><br>
+
+<button (click) = "onLoadBooks()">Load Books</button>
+<button (click) = "onDeleteLastBook()">Delete Books</button><br><br>
+
+<app-library [LibraryBooks]="books"></app-library>
