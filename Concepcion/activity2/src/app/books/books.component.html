@@ -1,0 +1,25 @@
+<div id="table">
+  <table>
+
+    <tr>
+      <th>id</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Available</th>
+      <th>Image</th>
+      <th>Action</th>
+    </tr>
+
+    <tr *ngFor="let book of books">
+      <td>{{book.id}}</td>
+      <td>{{book.title}}</td>
+      <td>{{book.author}}</td>
+      <td>{{book.available}}</td>
+      <td>
+        <app-image [image]="book.image"></app-image>
+      </td>
+      <td><button (click)="onClick(book)">Check Out</button></td>
+
+    </tr>
+  </table>
+</div>
