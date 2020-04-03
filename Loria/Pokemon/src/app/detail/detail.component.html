@@ -1,0 +1,24 @@
+<table>
+    <th colspan="3"><h1>{{pokemonDetails.name}}</h1></th>
+    <tr>
+        <td rowspan = "6">
+            Sprite: <img width = "100%" [src] = pokemonDetails.sprites.front_default>
+        </td>
+        <td>
+            <tr>
+                ID: {{pokemonDetails.id}}
+            </tr>
+            <tr>
+                Pokemon Height: {{pokemonDetails.height}}
+            </tr>
+            <tr>
+                Pokemon Weight: {{pokemonDetails.weight}}
+            </tr>           
+        </td>
+        <td>
+            <tr>Pokemon's Shiny Form:</tr>
+            <tr><img width="100%" [src] = pokemonDetails.sprites.front_shiny></tr>
+        </td>
+    </tr>
+</table>
+<h4><a [routerLink] = "['/pokemondisplay']">Return to First 20 Pokemon list</a></h4>
