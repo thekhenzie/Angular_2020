@@ -1,0 +1,7 @@
+#image {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100px;
+    height: 100px;
+    border: 3px solid blue;
+}

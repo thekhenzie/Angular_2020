@@ -1,0 +1,17 @@
+<table id="table">
+
+  <tr>
+    <th>Pokemon Name</th>
+    <th>Pokemon Image</th>
+    <th>Check Pokemon Details</th>
+  </tr>
+  <!-- <tr **ngFor="let pokemon of pokemonList"> -->
+  <tr *ngFor="let pokemon of pokemonList">
+    <td>
+      {{pokemon.name}}
+    </td>
+    <td>
+     <img [src]="pokemon.sprites.front_default" alt="No Image">
+    </td>
+  </tr>
+</table>
