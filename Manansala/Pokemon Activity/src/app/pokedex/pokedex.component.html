@@ -1,0 +1,10 @@
+<table>
+    <tr>
+      <th>Pokemon Name</th>
+      <th>Pokemon Image</th>
+    </tr>
+    <tr *ngFor="let pokemon of pokemons">
+        <td><button (click)="redirectToPokemon(pokemon.id)">{{pokemon.name}}</button></td>  
+        <td><img [src]="pokemon.sprites.front_default"></td>
+    </tr>
+  </table>

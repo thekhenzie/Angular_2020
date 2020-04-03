@@ -1,0 +1,19 @@
+<p>You chose pokemon: {{pokemon.name}}</p>
+<img [src]="pokemon.sprites.front_default">
+<!-- <p>It's main ability is: {{pokemon.abilities[0].ability.name}}</p> -->
+<table>
+    <tr>
+        <th>Abilites</th>
+    </tr>
+    <tr *ngFor="let ability of pokemon.abilities">
+        <td>{{ability.ability.name}}</td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th>Moves</th>
+    </tr>
+    <tr *ngFor="let moves of pokemon.moves">
+        <td>{{moves.move.name}}</td>
+    </tr>
+</table>

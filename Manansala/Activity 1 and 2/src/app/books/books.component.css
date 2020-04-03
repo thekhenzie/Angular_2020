@@ -1,0 +1,23 @@
+table, th, td {
+    text-align: center;
+    padding: 8px;
+  }
+
+th {
+    color: #000000;
+    background: #4FC3A1;
+}
+
+td {
+    border-right: 1px solid #000000;
+    vertical-align: middle;
+}
+
+button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
