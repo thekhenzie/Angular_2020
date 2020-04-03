@@ -1,0 +1,16 @@
+
+  <app-library [bookies]="bookies"></app-library>
+  
+  <div class="appdiv">
+    <span class="title">
+    <label>Title </label>
+  <input type="text" [(ngModel)]="title"  /></span>
+ <span class="author"> <label class="author">Author </label>
+  <input type="text" [(ngModel)]="author"  /></span>
+ <span class="avail"> <label>Availability (Check if book is available) <input type="checkbox" [(ngModel)]="available" /></label></span>
+  <span class="url">
+  <label class="url">Image Url</label>
+  <input type="url" [(ngModel)]="image"  />
+  </span>
+  <button (click)="AddInputBook()" class="btn btn-primary">Submit</button>
+</div>
