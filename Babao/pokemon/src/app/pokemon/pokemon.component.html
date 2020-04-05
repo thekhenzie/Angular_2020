@@ -1,0 +1,16 @@
+<h1>First 20 Pokemon</h1>
+<table>
+<tr>
+  <th>Pokemon Name</th>
+  <th>Pokemon Sprite</th>
+</tr>
+
+<tr *ngFor="let pokes of pokemon">
+  <td>
+    <a [routerLink] = "['/pokemondetails',pokes.id]">{{pokes.name}}</a>
+  </td>
+  <td>
+    <a [routerLink] = "['/pokemondetails',pokes.id]"><img [src]='pokes.sprite'></a>
+  </td>
+</tr>
+</table>

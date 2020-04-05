@@ -1,0 +1,17 @@
+
+<h1>{{title1}}</h1>
+
+Add a new book!
+<br>
+<input type = "text" placeholder = "Title" [(ngModel)]="title" name = "titlee"><br>
+<input type = "text" placeholder = "Author" [(ngModel)]="author" name = "authorr"><br>
+<label>Available?</label>
+<select [(ngModel)] = "available">
+<option value='true'>True</option>
+<option value='false'>False</option>
+</select><br>
+<input type = "text" placeholder = "Image" [(ngModel)]="image"><br>
+
+<button (click) = "addBook()">AddBook!</button><br>
+
+<app-library [libBooks] = "listOfBooks"></app-library>

@@ -1,0 +1,20 @@
+<p>List of Books!</p>
+
+<table>
+    <thead>
+        <th>BookID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Available</th>
+        <th>Actions</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of donatedBooks">
+            <th>{{book.id}}</th>
+            <th>{{book.title}}</th>
+            <th>{{book.author}}</th>
+            <th>{{book.available}}</th>
+            <th><button (click)="onButtonClick(book)">Click me!</button></th>
+        </tr>
+    </tbody>
+</table>

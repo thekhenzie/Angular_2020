@@ -1,0 +1,36 @@
+
+h1{
+    text-align: center;
+}
+hr{
+    border-bottom:  rgb(230, 10, 10) 1px solid ;
+}
+table{
+    width: 80%;
+    margin-left: 10%;
+}
+th{
+    text-transform: uppercase;
+    background-color: rgb(72, 70, 90);
+    color: whitesmoke;
+    border: 1px solid rgb(72, 70, 90);
+    text-align: center;
+}
+td{
+    text-transform: capitalize;
+    
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.img{
+    text-align: center;
+}

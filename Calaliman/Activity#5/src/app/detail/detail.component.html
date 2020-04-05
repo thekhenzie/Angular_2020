@@ -1,0 +1,19 @@
+<div id="divPokedex" *ngFor="let pokemon of monster">
+    <div id="pokemonName">
+      <p>Pokemon#{{pokemon.id}}<br>Pokemon name: {{pokemon.name}}</p>
+    </div>
+    <div id="divPokeImage">
+        <img id="pokemonImage" [src]="pokemon.sprites.front_default">
+    </div>
+    <div>
+        <h4>Skill:</h4>
+        <div id="pokeSkill" *ngFor="let skill of pokemon.abilities">
+          <div>{{skill.ability.name}}</div>
+        </div>
+
+        <h4>Race:</h4>
+        <div id="pokeRace" *ngFor="let Race of pokemon.types">
+          <div>{{Race.type.name}}</div>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,13 @@
+<div>
+    <div>
+        Add New Book:<br>
+        <input [(ngModel)]="title" type="text" placeholder="Input Title">
+        <input [(ngModel)]="author" type="text" placeholder="Input Author">
+        <select [(ngModel)]="available">
+            <option value = 'true'>True</option>
+            <option value = 'false'>False</option></select>
+       <input [(ngModel)]="image" type="text" placeholder="Input Image"><br>
+       <button (click)="addNewBook()">Add Book</button>
+    </div>
+    <app-library [books] = "books"></app-library>
+</div>

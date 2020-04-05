@@ -1,0 +1,23 @@
+<!-- <div [hidden]=true> -->
+<h1>{{header}}</h1>
+<hr>
+<br>
+
+        
+    <div class='format'>
+        <button (click)='getAllBooks()'>Load Books</button>
+        <button [disabled]='!listOfBooks' (click)='delLastBook()'>Delete Last Book</button>
+        <br>
+        <br>
+        <input type="text" [(ngModel)]="nTitle" placeholder="Title">
+        <input type="text" [(ngModel)]="nAuthor" placeholder="Author">
+        Available? true/ false  
+        <input type="text" [(ngModel)]="nAvail" placeholder="Available?" maxlength="5"> 
+        <!-- Available <input type="checkbox"  [(ngModel)]="nAvail" [ngModelOptions]='{standalone: false}'> -->
+        <input type="url"  [(ngModel)]="nImgURL" placeholder="Image URL">
+        <button [disabled]='!listOfBooks' (click)='addNewBook()'>Add Book</button>
+    
+    </div>
+    
+<br>
+<app-library [libraryBooks]="listOfBooks"></app-library>

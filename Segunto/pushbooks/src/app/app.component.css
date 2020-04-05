@@ -1,0 +1,29 @@
+.appdiv {
+  margin: 0px auto;
+  padding-left: 10%;
+  display: inline-block;
+  width:100%;
+  margin-top: 3%;
+}
+
+
+span.title{
+  margin-right : 9%;
+}
+
+span.author{
+  margin-right : 2%;
+}
+
+span.avail{
+  margin-right: 2%;
+}
+label.url{
+  margin-right: 10px;
+}
+
+button.btn.btn-primary{
+  margin-left: 2%;
+  height: 2%;
+
+}

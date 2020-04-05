@@ -1,0 +1,23 @@
+<br><br>
+<table>
+  <thead>
+    <tr>
+      <th>Pokemon Description</th>
+      <th>Front Image</th>
+      <th>Back Image</th>
+      <th>Weight</th>
+      <th>Types</th>
+      <th>Ability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of getPoke">
+      <td>{{p.name}}</td>
+      <td><img [src]="p.sprites.front_default"></td>
+      <td><img [src]="p.sprites.back_default"></td>
+      <td>{{p.weight}}</td>
+      <td>{{p.types[0].type.name}}</td>
+      <td>{{p.abilities[0].ability.name}}</td>
+    </tr>
+  </tbody>
+</table>

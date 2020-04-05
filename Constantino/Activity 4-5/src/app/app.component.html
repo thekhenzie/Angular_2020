@@ -1,0 +1,17 @@
+<!--
+<div *ngFor="let pokemons of listofPokemons;">
+  Pokemon name: {{pokemons.name}}
+  <br>
+  <img [src]="pokemons.sprites.front_default">
+</div> -->
+
+<ul>
+  <li>
+    <a [routerLink]="['/welcome']">Home</a>
+  </li>
+  <li>
+    <a [routerLink]="['/pokemons']">Pokemon</a>
+  </li>
+  
+</ul>
+<router-outlet></router-outlet>

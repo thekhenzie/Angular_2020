@@ -1,0 +1,18 @@
+<div class="card">
+  <img [src]="chosenPokemon.sprites.front_default" width="200px" height="200px" alt="No Image">
+  <img [src]="chosenPokemon.sprites.back_default" width="200px" height="200px" alt="No Image">
+  <img [src]="chosenPokemon.sprites.front_shiny" width="200px" height="200px" alt="No Image">
+  <img [src]="chosenPokemon.sprites.back_shiny" width="200px" height="200px" alt="No Image">
+  <h1>{{chosenPokemon.name}}</h1>
+  <h2>Pokemon Type:</h2>
+  <div *ngFor="let t of chosenPokemon.types">
+    <p>{{t.type.name}}</p>
+  </div>
+  {{chosenPokemon.types[0].type.name}}
+  <h2>Abilities: </h2>
+  <div *ngFor="let a of chosenPokemon.abilities">
+    <p>{{a.ability.name}}</p>
+  </div>
+
+
+</div>

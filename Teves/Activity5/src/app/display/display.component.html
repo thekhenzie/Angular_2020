@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Pokemon Name</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let p of pokemon">
+      <td>{{p.id}}</td>
+      <td> {{p.name}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+<div>
+  <button (click)="redirectToPokemon()">Click here to view description!</button>
+</div>

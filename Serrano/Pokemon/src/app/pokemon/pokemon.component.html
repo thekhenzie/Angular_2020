@@ -1,0 +1,19 @@
+<h1>POKEDEX</h1>
+<table class="table">
+  <tr>
+    <th> Pokemon Name </th>
+    <th> Pokemon Sprite</th>
+  </tr>
+  <tr *ngFor="let pokemon of pokemonArr">
+    <td>
+      <a [routerLink]="['/pokemons',pokemon.id]">{{pokemon.name}}</a>
+    </td>
+    <td>
+      <a [routerLink]="['/pokemons',pokemon.id]"><img [src]=pokemon.img></a>
+    </td>
+  </tr>
+
+
+  
+</table>
+<router-outlet></router-outlet>

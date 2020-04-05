@@ -1,0 +1,30 @@
+<table border="2">
+  <table border="2">
+      <thead>
+          <th><strong>Pokemon Id</strong></th>
+          <th><strong>Pokemon Name</strong></th>
+          <th><strong>Image</strong></th>
+          <th><strong>Details</strong></th>
+      </thead>
+      <tbody>
+          <tr *ngFor="let pokemons of listofPokemons">
+              <td>{{pokemons.id}}</td>
+              <td>{{pokemons.name}}</td>
+              <td>
+                <img [src]="pokemons.sprites.front_default">
+              </td>
+              <td>
+                <a [routerLink]="['/details',pokemons.id]">More Details</a>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</table>
+<router-outlet></router-outlet>
+<!--<div *ngFor="let pokemons of listofPokemons;">
+  <button ejs-button cssClass="e-link" [routerLink]="['/details']">{{pokemons.name}}</button>
+    Pokemon name: {{pokemons.name}}
+    
+    <br>
+    <img [src]="pokemons.sprites.front_default">
+  </div> -->

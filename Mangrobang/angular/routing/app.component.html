@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<table *ngIf="pokemons" class="table">
+  <thead>
+    <th><strong>ID:</strong></th>
+    <th><strong>Name:</strong></th>
+    <th><strong>Image:</strong></th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let poke of pokemons">
+      <td>{{poke.id}}</td>
+      <td>{{poke.name}}</td>
+      <td><img [src]='poke.image' alt="{{poke.name}} sprite"></td>
+    </tr>
+  </tbody>
+</table>

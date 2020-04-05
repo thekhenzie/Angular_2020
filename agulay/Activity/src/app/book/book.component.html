@@ -1,0 +1,25 @@
+
+<table [hidden]="!books">
+    <thead>
+        <th>id</th>
+        <th>title</th>
+        <th>author</th>
+        <th>available</th>
+        <th>cover</th>
+        <th>action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor='let book of books'>
+            <td>{{book.id}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <!-- <td>{{book.available}}</td> -->
+            <td *ngIf='book.available'>Yes</td>
+            <td *ngIf='!book.available'>No</td>
+            <td> <app-image [imageURL]='book.image'></app-image> </td>
+            <td><button (click)='selectButtonClick(book)'>select</button></td>
+
+        </tr>
+    </tbody>
+</table>
+

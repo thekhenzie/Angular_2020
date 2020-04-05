@@ -1,0 +1,30 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  th{
+      text-transform: uppercase;
+      background-color: rgb(72, 70, 90);
+      color: whitesmoke;
+  }
+  td{
+      text-transform: capitalize;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  button{
+    flex: auto;
+  }
